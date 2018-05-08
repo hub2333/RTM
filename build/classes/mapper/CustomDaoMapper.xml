@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hub.dao.CustomDao" >
+  <resultMap id="BaseResultMap" type="com.hub.entity.Nirmodel" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="modelname" property="modelname" jdbcType="VARCHAR" />
+    <result column="interval" property="interval" jdbcType="VARCHAR" />
+    <result column="constant" property="constant" jdbcType="DOUBLE" />
+    <result column="time" property="time" jdbcType="TIMESTAMP" />
+    <result column="uploader" property="uploader" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <select id="getNirmodel" parameterType="com.hub.entity.Nirmodel"  >
+    select top 1 from nirmodel
+  </select>
+
+</mapper>
