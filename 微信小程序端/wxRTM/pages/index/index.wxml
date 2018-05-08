@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  
+  <view><button bindtap='socket'>触发websocket连接</button></view>
+  <view>回馈数据:{{nir}}</view>
+
+  <view><button bindtap='usemodel'>测试模型</button></view>
+ <view><button bindtap='socket'>测试websocket</button></view>
+<button bindtap="sendSocketMessage">发送消息</button>
+<view>预测结果为:{{predicate}}</view>
+</view>

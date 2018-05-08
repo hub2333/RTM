@@ -1,0 +1,7 @@
+<button bindtap='openSocket' type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" >葡萄糖过程数据显示： </button>
+<view   class="item_city"  >   
+  <view class="container1">
+    <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+  </view>
+</view>

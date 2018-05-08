@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/linetest/linetest",
+    "pages/line/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/nirplot/nirplot",
+    "pages/process/process"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "近红外在线检测系统",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "img/main2.png",
+        "iconPath": "img/main1.png",
+        "pagePath": "pages/main/main",
+        "text": "实时"
+      },
+      {
+        "selectedIconPath": "img/classify2.png",
+        "iconPath": "img/classify1.png",
+        "pagePath": "pages/process/process",
+        "text": "过程"
+      }
+    ]
+  }
+}

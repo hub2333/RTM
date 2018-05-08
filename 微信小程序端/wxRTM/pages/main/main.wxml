@@ -1,0 +1,20 @@
+<!--pages/main/main.wxml-->
+<!-- <button bindtap='openSocket' type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" >在线监控 </button> -->
+
+ <view class="footer-btn" type="primary" style='display:flex;'>
+    <view style='flex:5'><text style='color:white'>在线监控状态：{{isChecked==true?'已开启':'未开启'}}</text></view>
+    <view style='flex:1'><switch  color="#A020F0" checked="{{isChecked}}" bindchange="changeSwitch"/>
+    </view>
+</view>
+
+
+<scroll-view scroll-y="true">
+   <block wx:for="{{reverse_processdata}}" wx:for-item="pd" wx:key="index">
+      <view style='display:flex'  class="item_city"  bindtap="gotonir"  data-index="{{index}}">
+      <view style='flex:2'>采集时间：<view>{{pd.time}} </view></view>      
+      <view style='margin-left:80rpx;flex:2'>
+          <text style='color:red'> 监测值：{{pd.predict}}</text></view>
+      </view>
+    </block>
+</scroll-view>

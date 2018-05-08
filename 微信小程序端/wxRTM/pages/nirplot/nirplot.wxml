@@ -1,0 +1,25 @@
+ <view   class="item_city"  >   
+  <view> 发酵过程葡萄糖在线检测</view>
+</view>
+
+
+<view   class="item_city"  >   
+  <view>葡萄糖光谱采集时间：
+      <text style='color:red'>{{nirfile.time}}</text>
+  </view>
+</view>
+
+
+<view   class="item_city"  >   
+  <view>葡萄糖预测结果：
+      <text style='color:red'>{{nirfile.predict}}</text>
+  </view>
+</view>
+
+
+<view   class="item_city"  >   
+  <view>葡萄糖光谱曲线显示：</view>
+  <view class="container1">
+    <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+  </view>
+</view>
